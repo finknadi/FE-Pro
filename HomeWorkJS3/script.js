@@ -10,7 +10,7 @@ const btnMinus = document.querySelector(".minus")
 const counterElem = document.querySelector("span")
 let counterValue = 10
 
-// Получаем данные из localStorage при загрузке страницы
+
 if(localStorage.getItem("count") !== null) {
     counterValue = +localStorage.getItem("count")
 }
@@ -20,7 +20,7 @@ btnPlus.addEventListener("click", function () {
     product.count++
     counterValue++
     counterElem.innerText = counterValue
-    localStorage.setItem("count", counterValue); // Сохраняем значение в localStorage
+    localStorage.setItem("count", counterValue);
 })
 
 btnMinus.addEventListener("click", function () {
@@ -28,17 +28,17 @@ btnMinus.addEventListener("click", function () {
         product.count--
         counterValue--
         counterElem.innerText = counterValue
-        localStorage.setItem("count", counterValue); // Сохраняем значение в localStorage
+        localStorage.setItem("count", counterValue);
     }
 })
 
 let btnStar = document.querySelector(".star")
 btnStar.addEventListener("click", function () {
-    product.favorite = !product.favorite // Переключаем состояние избранного
+    product.favorite = !product.favorite 
     if (product.favorite) {
-        btnStar.classList.add("active"); // Добавляем активный стиль
+        btnStar.classList.add("active");
     } else {
-        btnStar.classList.remove("active"); // Убираем активный стиль
+        btnStar.classList.remove("active");
     }
-    localStorage.setItem("product", JSON.stringify(product)); // Сохраняем данные о товаре в localStorage
+    localStorage.setItem("product", JSON.stringify(product)); 
 })
