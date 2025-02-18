@@ -1,0 +1,109 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(240, 240, 240);
+}
+
+main {
+    background-color: rgb(85, 55, 118);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.forma {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.forma button {
+    background-color: rgb(255, 165, 0);
+    padding: 8px 12px;
+    margin-left: 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.forma button:hover {
+    background-color: rgb(220, 140, 0);
+}
+
+.forma input {
+    border-radius: 8px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    width: 160px;
+    outline: none;
+}
+
+.person_card {
+    background-color: rgb(32, 32, 32);
+    border-radius: 12px;
+    width: 280px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    gap: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.person_card .title {
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.person_card .image {
+    width: 180px;
+    height: 180px;
+    background-color: rgb(85, 55, 118);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.person_card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.person_card .text {
+    margin: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.person_card p {
+    margin: 5px 0;
+    font-size: 14px;
+}
